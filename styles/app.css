@@ -28,7 +28,8 @@ color: white;
         font-family: 'Roboto',sans-serif;
         margin-top: 20px;
         font-weight: normal;
-        background-color: grey;
+        background-color: #EEEEEE;
+        color: black;
         border: solid 1px black;
         cursor: pointer;
         text-decoration: none;
@@ -77,7 +78,7 @@ color: white;
 
 .primerseccion__caja {
     width: 50%;
-    padding: 40px;
+    padding: 7%;
 }
 
 .primerseccion__caja__boton {
@@ -98,7 +99,7 @@ font-weight: normal;
 }
 
 .primerseccion__caja__titulo {
-    width: 420px;
+    width: 100%;
 }
 
 
@@ -112,20 +113,35 @@ font-weight: normal;
  .segundaseccion__cajados {
     font-size: 1.1em;
     font-family: 'Roboto Slab',sans-serif;
-    justify-content: flex-end;
+    justify-content: right;
+
     text-align: right;
     margin-left: 5em;
     margin-top: 10em;
+    
  }
 
-.segundaseccion__cajados__boton {
-        padding: 1em;
-        font-size: 1.1em;
-        font-family: 'Roboto',sans-serif;
-        margin-top: 1.5em;
-        font-weight: normal;
-        }
+ .botoninfo {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 1.1em;
+    font-family: 'Roboto',sans-serif;
+    margin-top: 20px;
+    font-weight: normal;
+    background-color: #EEEEEE;
+    color: black;
+    border: solid 1px black;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+ }
  
+
+
+
+
 .terceraseccion {
     display: flex;
     margin-top: 9em;
