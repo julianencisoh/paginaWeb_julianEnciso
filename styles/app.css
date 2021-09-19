@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navigation {
+    background: #000;
+}
+
+.navigation a {
+text-decoration: none;
+color: white;
+}
+
+.nav__content{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+.btn {
+        padding: 20px;
+        font-size: 1.1em;
+        font-family: 'Roboto',sans-serif;
+        margin-top: 20px;
+        font-weight: normal;
+        background-color: grey;
+        border: solid 1px black;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10em;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    font-family: 'Roboto',sans-serif;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 6em;
+    font-family: 'Roboto',sans-serif;
+    color: white;*/
+}
+
+.menu__item {
+    padding: 1em 0.6em;
+    display: inline-block;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 90px;
+}
+
+.primerseccion {
+    display: flex;
+    align-items: center;
+}
+
+.primerseccion__caja__contenido {
+    font-size: 1.1em;
+    font-family: 'Roboto Slab',sans-serif;
+}
+
+.primerseccion__caja {
+    width: 50%;
+    padding: 40px;
+}
+
+.primerseccion__caja__boton {
+padding: 1em;
+font-size: 1.1em;
+font-family: 'Roboto',sans-serif;
+margin-top: 1.5em;
+font-weight: normal;
+}
+
+.primerseccion__cajados {
+    width: 50%;
+  
+}
+
+.primerseccion__foto {
+    width: 100%;
+}
+
+.primerseccion__caja__titulo {
+    width: 420px;
+}
+
+
+.segundaseccion {
+    display: flex;
+    margin-top: 9em;
+    margin-left: 10em;
+    margin-right: 10em;
+ }
+
+ .segundaseccion__cajados {
+    font-size: 1.1em;
+    font-family: 'Roboto Slab',sans-serif;
+    justify-content: flex-end;
+    text-align: right;
+    margin-left: 5em;
+    margin-top: 10em;
+ }
+
+.segundaseccion__cajados__boton {
+        padding: 1em;
+        font-size: 1.1em;
+        font-family: 'Roboto',sans-serif;
+        margin-top: 1.5em;
+        font-weight: normal;
+        }
+ 
+.terceraseccion {
+    display: flex;
+    margin-top: 9em;
+    margin-left: 4em;
+    }
+
+
+.terceraseccion__cajauno {
+    font-size: 1.1em;
+    font-family: 'Roboto Slab',sans-serif;
+    justify-content: flex-end;
+    margin-left: 5em;
+    margin-top: 10em;
+    margin-right: 5em;
+     }
+
+.terceraseccion__cajauno__boton {
+padding: 1em;
+font-size: 1.1em;
+font-family: 'Roboto',sans-serif;
+margin-top: 1.5em;
+font-weight: normal;
+}
+
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.nuestrocatalogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalogo__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalogo__item .catalogo__imagen {
+    width: 33%;
+}
+
+.contacto__imagen {
+    width: 100%;
+}
+
+.nuestrocatalogo__boton {
+
+padding: 1em;
+font-size: 1.1em;
+font-family: 'Roboto',sans-serif;
+margin-top: 1.5em;
+font-weight: normal;
+}
+
+
+

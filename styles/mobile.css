@@ -1,0 +1,35 @@
+@media all and (max-width: 768px) {
+    .primerseccion {
+        flex-direction: column;
+    }
+
+    .primerseccion__caja {
+        width: 100%;
+    }
+
+    .primerseccion__caja__titulo, .primerseccion__cajados {
+        width: 100%;
+    }
+
+    .nav__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin: 0;
+        width: fit-content;
+    }
+
+    .nuestrocatalogo {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .nuestrocatalogo .btn {
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px) { 
+}
