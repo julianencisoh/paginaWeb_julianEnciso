@@ -4,10 +4,17 @@
     }
 
     .primerseccion__caja {
-        width: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     }
 
-    .primerseccion__caja__titulo, .primerseccion__cajados {
+    .primerseccion__caja__titulo{
+        width: 90%;
+    }
+    
+    .primerseccion__cajados {
         width: 100%;
     }
 
@@ -29,6 +36,34 @@
     .nuestrocatalogo .btn {
         display: none;
     }
+
+
+    .segundaseccion {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .segundaseccion__imagen {
+        padding: 0% 7%;
+    width: 100%;
+    justify-content: center;    
+    margin-top: 0%;
+
+}
+
+.segundaseccion__cajados{
+    padding: 0% 8%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0%;
+    
+}
+
+.botondos {
+    justify-content: center;
+}
+
 }
 
 @media all and (max-width: 500px) { 
