@@ -141,31 +141,36 @@ color: white;
  }
  
 
-
-
-
 .terceraseccion {
     display: flex;
-    margin-top: 9em;
-    margin-left: 4em;
-    }
+    padding: 0% 0% 7% 0%;
+    align-items: center;
+}
 
 
 .terceraseccion__cajauno {
+    width: 50%;
     font-size: 1.1em;
     font-family: 'Roboto Slab',sans-serif;
     justify-content: flex-end;
     margin-left: 5em;
     margin-top: 10em;
     margin-right: 5em;
-     }
+}
 
-.terceraseccion__cajauno__boton {
-padding: 1em;
-font-size: 1.1em;
-font-family: 'Roboto',sans-serif;
-margin-top: 1.5em;
-font-weight: normal;
+.terceraseccion__titulo {
+    width: 80%;
+}
+
+.botondos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+.terceraseccion__cajados {
+width: 50%;
+
 }
 
 
