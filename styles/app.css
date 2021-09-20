@@ -326,11 +326,10 @@ stroke: 5px;
     background-color: black;
     width: 100%;
     padding: 5% 10%;
+    justify-content: space-between;
 }
 
-.footer__left {
-width: 50%;
-}
+
 
 .footer__left__logo {
  width: 90px;
@@ -338,7 +337,7 @@ width: 50%;
 
 .footer__right {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end   ;
     justify-content: right;
     width: 70%;
     font-size: 80%;

@@ -144,10 +144,23 @@
     justify-content: center;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.footer__left {
+    align-items: center;
+}
+.footer__left__logo {
+    width: 110px;
+}
 
-
-
+.footer__right {
+    margin-top: 10%;
+    align-items: center;
+}
 
 
 }
