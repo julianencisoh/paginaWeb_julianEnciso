@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="./styles/app.css">
     <link rel="stylesheet" href="./styles/mobile.css">
@@ -123,15 +124,64 @@
 
     </div>
 
-    <div class="catalogo">
+    <div class="swiper">
+    
+        <div class="slidercatalogo swiper-wrapper">
 
-        <div class="catalogo__item">
-            <img class="catalogo__imagen" src="./recursos/catalogoUno.png" alt="foto decoracion">
-            <img class="catalogo__imagen" src="./recursos/catalogoDos.png" alt="foto decoracion">
-            <img class="catalogo__imagen" src="./recursos/catalogoTres.png" alt="foto decoracion">
+            <div class="swiper-slide">
+
+                <div class="swiper__item">
+                    <img class="catalogo__imagen" src="./recursos/catalogoUno.png" alt="foto decoracion">
+                </div>
+                <div class="swiper__item">
+                    <img class="catalogo__imagen" src="./recursos/catalogoDos.png" alt="foto decoracion">
+                </div>
+                <div class="swiper__item">
+                    <img class="catalogo__imagen" src="./recursos/catalogoTres.png" alt="foto decoracion">
+                </div>
+                
+            </div>
+
+            <div class="swiper-slide">
+
+                <div class="swiper__item">
+                    <img class="catalogo__imagen" src="./recursos/catalogoUno.png" alt="foto decoracion">
+                </div>
+                <div class="swiper__item">
+                    <img class="catalogo__imagen" src="./recursos/catalogoDos.png" alt="foto decoracion">
+                </div>
+                <div class="swiper__item">
+                    <img class="catalogo__imagen" src="./recursos/catalogoTres.png" alt="foto decoracion">
+                </div>
+                
+            </div>
+
+            <div class="swiper-slide">
+
+                <div class="swiper__item">
+                    <img class="catalogo__imagen" src="./recursos/catalogoUno.png" alt="foto decoracion">
+                </div>
+                <div class="swiper__item">
+                    <img class="catalogo__imagen" src="./recursos/catalogoDos.png" alt="foto decoracion">
+                </div>
+                <div class="swiper__item">
+                    <img class="catalogo__imagen" src="./recursos/catalogoTres.png" alt="foto decoracion">
+                </div>
+                
+            </div>
+
+
         </div>
 
-    </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>  
+
+</div>
+
+
+
 
 </div>
 
@@ -164,7 +214,19 @@
 
 
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
+    <script>
+
+        var swiper = new Swiper(".swiper", {
+                loop: true,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+
+    </script>
 
 </body>
 </html>
