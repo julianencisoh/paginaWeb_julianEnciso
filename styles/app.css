@@ -60,6 +60,12 @@ color: white;
     padding: 7%;
 }
 
+.botonuno {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
 .primeraseccion__btn {
     padding: 20px;
     font-size: 1.1em;
@@ -125,6 +131,7 @@ color: white;
     align-items: flex-end;
     justify-content: right;
 }
+
  .botoninfo {
     
     padding: 20px;
@@ -150,27 +157,32 @@ color: white;
 
 .terceraseccion__cajauno {
     width: 50%;
+    padding: 0% 7%;
     font-size: 1.1em;
     font-family: 'Roboto Slab',sans-serif;
     justify-content: flex-end;
-    margin-left: 5em;
-    margin-top: 10em;
-    margin-right: 5em;
+}
+
+.botontres {
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
 }
 
 .terceraseccion__titulo {
     width: 80%;
 }
 
-.botondos {
-    display: flex;
-    align-items: flex-end;
-    justify-content: left;
+
+
+.terceraseccion__cajados{
+    width: 50%;
+    padding: 7% 0%;
+    align-items: left;
 }
 
-.terceraseccion__cajados {
-width: 50%;
-
+.terceraseccion__cajados__imagen{
+    width: 100%;
 }
 
 

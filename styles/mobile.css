@@ -10,6 +10,10 @@
     align-items: center;
     }
 
+    .botonuno {
+        justify-content: center;
+    }
+
     .primerseccion__caja__titulo{
         width: 90%;
     }
@@ -63,6 +67,47 @@
 .botondos {
     justify-content: center;
 }
+
+.terceraseccion {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    justify-content:flex-start;
+}
+
+.terceraseccion__cajauno {
+    padding: 0% 8%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0%;
+      
+}
+
+.botontres {
+    justify-content: center;
+}
+
+.terceraseccion__cajados{
+    width: 118%;
+    padding: 7% 15% 0% 15%;
+    align-items: right;
+}
+
+.terceraseccion__cajados__imagen{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
