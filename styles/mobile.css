@@ -1,58 +1,57 @@
 @media all and (max-width: 768px) {
-    .primerseccion {
-        flex-direction: column;
-    }
+.primerseccion {
+    flex-direction: column;
+}
 
-    .primerseccion__caja {
+.primerseccion__caja {
     width: 100%;
     justify-content: center;
     text-align: center;
     align-items: center;
-    }
+}
 
-    .botonuno {
-        justify-content: center;
-    }
+.botonuno {
+    justify-content: center;
+}
 
-    .primerseccion__caja__titulo{
-        width: 90%;
-    }
+.segundaseccion__cajauno{
+    width: 50%; 
+}
+
+.primerseccion__caja__titulo{
+    width: 90%;
+}
     
-    .primerseccion__cajados {
-        width: 100%;
-    }
+.primerseccion__cajados {
+    width: 100%;
+}
 
-    .nav__content {
-        flex-direction: column;
-        align-items: center;
-    }
+.nav__content {
+    flex-direction: column;
+    align-items: center;
+}
 
-    .menu {
-        margin: 0;
-        width: fit-content;
-    }
-
-    .nuestrocatalogo {
-        flex-direction: column;
-        margin-top: 50px;
-    }
-
-    .nuestrocatalogo .btn {
-        display: none;
-    }
+.menu {
+    margin: 0;
+    width: fit-content;
+}
 
 
-    .segundaseccion {
-        flex-direction: column;
-        width: 100%;
-    }
+.segundaseccion__cajauno{
+    width: 80%;
+    margin-bottom: 6%;
+}
+
+.segundaseccion {
+    flex-direction: column;
+    width: 100%;
+}
     
-    .segundaseccion__imagen {
-        padding: 0% 7%;
+.segundaseccion__imagen {
+    padding: 0% 7%;
     width: 100%;
     justify-content: center;    
     margin-top: 0%;
-
 }
 
 .segundaseccion__cajados{
@@ -60,8 +59,7 @@
     width: 100%;
     justify-content: center;
     text-align: center;
-    margin-top: 0%;
-    
+    margin-top: 0%;  
 }
 
 .botondos {
@@ -80,8 +78,7 @@
     width: 100%;
     justify-content: center;
     text-align: center;
-    margin-top: 0%;
-      
+    margin-top: 0%;   
 }
 
 .botontres {
@@ -98,6 +95,31 @@
     width: 100%;
 }
 
+
+.nuestrocatalogo {
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nuestrocatalogo__boton {
+    align-items: center;
+    justify-content: center;
+}
+
+.nuestrocatalogo .btn {
+    display: none;
+}
+
+.nuestrocatalogo__titulo {
+    width: 80%;
+    justify-content: center;    
+}
+
+.nuestrocatalogo__imagentitulo{
+    width: 100%;
+}
 
 
 
