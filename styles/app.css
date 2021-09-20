@@ -267,19 +267,18 @@ stroke: 5px;
     background-color: #F1F1F1;
     display: flex;
     width: 100%;
-    padding: 4% 0% 4% 0%;
+    padding: 4% 8% 4% 0%;
     align-items: center;
     
 }
 
 .contacto__imagen {
-    width: 80%;
-    padding: 0% 0% 0% 5.2%;
+    width: 90%;
+    padding: 0% 2% 0% 5.2%;
 }
 
 .contacto__form {
     width: 80%;
-    padding: 0% 7% 0% 0%;
     align-items: center;
 }
 
