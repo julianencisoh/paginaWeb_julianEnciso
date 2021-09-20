@@ -96,9 +96,13 @@ color: white;
 
 .segundaseccion {
     display: flex;
-    padding: 7% 0%;
+    padding: 5% 0%;
+    margin-top: -0.5%;
     align-items: center;
-    
+    background-color: #ffffff;
+    /* opacity: 0.8; */
+    background-image: linear-gradient(#e6e6e6 1px, transparent 1px), linear-gradient(to right, #e6e6e6 1px, #ffffff 1px);
+    background-size: 20px 20px;
  }
 
 .segundaseccion__imagen {
@@ -193,6 +197,10 @@ color: white;
     width: 85%;
     margin: 0 auto;
     margin-bottom: 20px;
+    background-position-x: left;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#d6d6d6 0.5px, #ffffff 1px);
+    background-size: 10px 10px;
 }
 
 .nuestrocatalogo {
