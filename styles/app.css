@@ -321,3 +321,16 @@ stroke: 5px;
     align-items: flex-end; 
 }
 
+.footer {
+    background-color: black;
+    width: 100%;
+    padding: 5% 10%;
+}
+
+.footer__left {
+width: 50%;
+}
+
+.footer__left__logo {
+ width: 90px;
+}
