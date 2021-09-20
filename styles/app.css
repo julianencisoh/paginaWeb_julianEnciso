@@ -322,6 +322,7 @@ stroke: 5px;
 }
 
 .footer {
+    display: flex;
     background-color: black;
     width: 100%;
     padding: 5% 10%;
@@ -333,4 +334,22 @@ width: 50%;
 
 .footer__left__logo {
  width: 90px;
+}
+
+.footer__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    width: 70%;
+    font-size: 80%;
+    color: white;
+    font-family: 'Roboto Slab',sans-serif;
+}
+
+.footer__item {
+ padding-left: 9%;   
+}
+
+.footer__item__title {
+    font-weight: bold;
 }
