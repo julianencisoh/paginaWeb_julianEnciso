@@ -22,8 +22,6 @@ color: white;
     padding: 1em 5em;
 }
 
-
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -72,7 +70,7 @@ color: white;
     font-family: 'Roboto',sans-serif;
     margin-top: 20px;
     font-weight: normal;
-    background-color: #EEEEEE;
+    background-color: #fffaef;
     color: black;
     border: solid 1px black;
     text-decoration: none;
@@ -82,7 +80,6 @@ color: white;
 
 .primerseccion__cajados {
     width: 50%;
-  
 }
 
 .primerseccion__foto {
@@ -103,7 +100,7 @@ color: white;
     /* opacity: 0.8; */
     background-image: linear-gradient(#e6e6e6 1px, transparent 1px), linear-gradient(to right, #e6e6e6 1px, #ffffff 1px);
     background-size: 20px 20px;
- }
+}
 
 .segundaseccion__imagen {
     padding: 0% 0% 0% 14%;
@@ -123,7 +120,6 @@ color: white;
     justify-content: right;
     text-align: right;
     align-items: flex-end;
-    
 }
 
 .segundaseccion__titulo {
@@ -143,13 +139,12 @@ color: white;
 }
 
  .botoninfo {
-    
     padding: 12px;
     font-size: 1.1em;
     font-family: 'Roboto',sans-serif;
     margin-top: 20px;
     font-weight: normal;
-    background-color: #EEEEEE;
+    background-color: #fffaef;;
     color: black;
     border: solid 1px black;
     text-decoration: none;
@@ -157,14 +152,10 @@ color: white;
     width: fit-content;
  }
 
- 
- 
-
 .terceraseccion {
     display: flex;
     align-items: center;
 }
-
 
 .terceraseccion__cajauno {
     width: 50%;
@@ -173,8 +164,6 @@ color: white;
     font-family: 'Roboto Slab',sans-serif;
     justify-content: flex-end;
 }
-
-
 
 .terceraseccion__titulo {
     width: 80%;
@@ -229,23 +218,21 @@ width: 66%;
     
 
 .botoncatalogo {
-    padding: 20px;
+    padding: 12px;
     font-size: 1.1em;
     font-family: 'Roboto',sans-serif;
     margin-top: 20px;
     font-weight: normal;
-    background-color: #EEEEEE;
+    background-color: #fffaef;
     color: black;
     border: solid 1px black;
     text-decoration: none;
     display: block;
     width: fit-content;
- }
-
+}
 
 .swiper {
 stroke: 5px;
-
 }
 
 .catalogo__item {
@@ -269,7 +256,6 @@ stroke: 5px;
 .swiper-pagination-bullet-active {
     color: aqua;
 }
-
 
 .contacto {
     background-color: #F1F1F1;
@@ -305,22 +291,16 @@ stroke: 5px;
     font-family: 'Roboto Slab',sans-serif;
 }
 
-.form {
-   
-}
-
 .form__item {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-
 }
 
 .contenedor__boton {
     display: flex;
     align-items: flex-end;
-    justify-content: right;
-       
+    justify-content: right;  
 }
 
 .form__boton {
@@ -330,9 +310,7 @@ stroke: 5px;
     font-family: 'Roboto',sans-serif; 
     color: black;
     border: solid 1px black;
-    background-color: #EEEEEE;
-    
-    
+    background-color: #fffaef;
 }
 
 .footer {
@@ -343,8 +321,6 @@ stroke: 5px;
     justify-content: space-between;
     align-items: flex-start;
 }
-
-
 
 .footer__left__logo {
  width: 90px;
@@ -361,7 +337,7 @@ stroke: 5px;
 }
 
 .footer__item {
- padding-left: 9%;   
+    padding-left: 9%;   
 }
 
 .footer__item__title {
