@@ -269,6 +269,7 @@ stroke: 5px;
     width: 100%;
     padding: 4% 0% 4% 0%;
     align-items: center;
+    
 }
 
 .contacto__imagen {
@@ -279,6 +280,7 @@ stroke: 5px;
 .contacto__form {
     width: 80%;
     padding: 0% 7% 0% 0%;
+    align-items: center;
 }
 
 .contacto__titulo {
@@ -296,11 +298,27 @@ stroke: 5px;
     font-family: 'Roboto Slab',sans-serif;
 }
 
-.form__item {
+.form {
+   
+}
 
+.form__item {
     width: 100%;
     padding: 10px;
-    
+    margin-top: 10px;
 
+}
+
+.contenedor__boton {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    
+}
+
+.form__boton {
+    padding: 10px;
+    margin-top: 10px;
+    align-items: flex-end; 
 }
 
