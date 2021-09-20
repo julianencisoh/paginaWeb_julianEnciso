@@ -19,7 +19,7 @@ color: white;
 .nav__content{
     display: flex;
     flex-direction: row;
-    padding: 1em;
+    padding: 1em 5em;
 }
 
 .btn {
@@ -42,18 +42,10 @@ color: white;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 10em;
     text-decoration: none;
     color: white;
     width: 100%;
     font-family: 'Roboto',sans-serif;
-    /*display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 6em;
-    font-family: 'Roboto',sans-serif;
-    color: white;*/
 }
 
 .menu__item {
@@ -105,21 +97,30 @@ font-weight: normal;
 
 .segundaseccion {
     display: flex;
-    margin-top: 9em;
-    margin-left: 10em;
-    margin-right: 10em;
+    padding: 7% 0%;
+    align-items: center;
  }
 
+.segundaseccion__imagen {
+    padding: 0% 0% 0% 14%;
+    width: 100%;
+}
+
+
+
  .segundaseccion__cajados {
+    padding: 7%;
+    width: 50%;
     font-size: 1.1em;
     font-family: 'Roboto Slab',sans-serif;
     justify-content: right;
-
     text-align: right;
-    margin-left: 5em;
-    margin-top: 10em;
     
- }
+    }
+
+    .segundaseccion__titulo {
+width: 80%;
+    }
 
  .botoninfo {
     display: flex;
