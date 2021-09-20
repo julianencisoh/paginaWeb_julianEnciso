@@ -145,13 +145,13 @@
             <div class="swiper-slide">
 
                 <div class="swiper__item">
-                    <img class="catalogo__imagen" src="./recursos/catalogoUno.png" alt="foto decoracion">
+                    <img class="catalogo__imagen" src="./recursos/catalogocuatro.png" alt="foto decoracion">
                 </div>
                 <div class="swiper__item">
-                    <img class="catalogo__imagen" src="./recursos/catalogoDos.png" alt="foto decoracion">
+                    <img class="catalogo__imagen" src="./recursos/catalogocinco.png" alt="foto decoracion">
                 </div>
                 <div class="swiper__item">
-                    <img class="catalogo__imagen" src="./recursos/catalogoTres.png" alt="foto decoracion">
+                    <img class="catalogo__imagen" src="./recursos/catalogoseis.png" alt="foto decoracion">
                 </div>
                 
             </div>
@@ -159,13 +159,13 @@
             <div class="swiper-slide">
 
                 <div class="swiper__item">
-                    <img class="catalogo__imagen" src="./recursos/catalogoUno.png" alt="foto decoracion">
+                    <img class="catalogo__imagen" src="./recursos/catalogosiete.png" alt="foto decoracion">
                 </div>
                 <div class="swiper__item">
-                    <img class="catalogo__imagen" src="./recursos/catalogoDos.png" alt="foto decoracion">
+                    <img class="catalogo__imagen" src="./recursos/catalogoocho.png" alt="foto decoracion">
                 </div>
                 <div class="swiper__item">
-                    <img class="catalogo__imagen" src="./recursos/catalogoTres.png" alt="foto decoracion">
+                    <img class="catalogo__imagen" src="./recursos/catalogonueve.png" alt="foto decoracion">
                 </div>
                 
             </div>
@@ -173,8 +173,7 @@
 
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
 
     </div>  
 
@@ -202,24 +201,20 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <script>
 
         var swiper = new Swiper(".swiper", {
                 loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
                 navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
