@@ -312,13 +312,19 @@ stroke: 5px;
     display: flex;
     align-items: flex-end;
     justify-content: right;
-    
+       
 }
 
 .form__boton {
     padding: 10px;
     margin-top: 10px;
-    align-items: flex-end; 
+    align-items: flex-end;
+    font-family: 'Roboto',sans-serif; 
+    color: black;
+    border: solid 1px black;
+    background-color: #EEEEEE;
+    
+    
 }
 
 .footer {
@@ -327,6 +333,7 @@ stroke: 5px;
     width: 100%;
     padding: 5% 10%;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 
@@ -337,7 +344,7 @@ stroke: 5px;
 
 .footer__right {
     display: flex;
-    align-items: flex-end   ;
+    align-items: flex-start;
     justify-content: right;
     width: 70%;
     font-size: 80%;

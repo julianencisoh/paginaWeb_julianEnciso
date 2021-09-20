@@ -86,8 +86,8 @@
 }
 
 .terceraseccion__cajados{
-    width: 118%;
-    padding: 7% 15% 0% 15%;
+    width: 100%;
+    padding: 7% 0% 0% 15%;
     align-items: right;
 }
 
@@ -159,7 +159,6 @@
 
 .footer__right {
     margin-top: 10%;
-    align-items: center;
 }
 
 
