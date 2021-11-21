@@ -155,5 +155,7 @@ padding-left: 15px;
 
 .producto__botonCarro {
   padding-top: 10px;
+  border: none;
+  background-color: transparent;
 }
 /*# sourceMappingURL=styles.css.map */

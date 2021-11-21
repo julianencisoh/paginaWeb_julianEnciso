@@ -42,6 +42,8 @@ const productos = [
     
 ];
 
+const carrito = [];
+
 const seccionDeProductos = document.getElementById("productos");
 
 const pintarProducto = (item) => {
@@ -70,13 +72,26 @@ const pintarProducto = (item) => {
                                         
                     </div>
     
-                    <img src="./recursos/BotonCarrito.png" alt="" class="producto__botonCarro">
+                    <button class="producto__botonCarro"><img src="./recursos/BotonCarrito.png"></button>
     
                 </div>
     
     `;
 
     seccionDeProductos.appendChild(producto);
+    const productoBotonCarro = producto.querySelector(".producto__botonCarro");
+
+    productoBotonCarro.addEventListener("click", e => {
+        e.preventDefault();
+        const productoAgregado = {
+            id: item.id,
+            name: item.name,
+            image: item.image
+        };
+        
+        carrito.push(productoAgregado);
+    });
+
 };
 
 productos.forEach(producto => {
