@@ -104,6 +104,27 @@ const pintarProducto = (item) => {
 
 };
 
-productos.forEach(producto => {
+    const filtrarPorCategorias = document.getElementById("categorias");
+    filtrarPorCategorias.addEventListener("change", e => {
+    const categoria = filtrarPorCategorias.value;
+
+    seccionDeProductos.innerHTML = "";
+
+    let productosYaFiltrados;
+
+    if (categoria !== ""){
+    productosYaFiltrados = productos.filter((producto) => producto.type === categoria);     
+    } else {
+        productosYaFiltrados = productos;
+    }
+
+
+    productosYaFiltrados.forEach(producto => {
+    pintarProducto(producto);
+    });
+
+}); 
+
+    productos.forEach(producto => {
     pintarProducto(producto);
 });

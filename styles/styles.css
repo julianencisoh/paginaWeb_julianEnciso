@@ -161,6 +161,7 @@ padding-left: 15px;
   border: none;
   background-image: url("../recursos/BotonCarrito.png");
   background-color: white;
+  cursor: pointer;
 }
 
 
