@@ -167,4 +167,11 @@ padding-left: 15px;
 .producto__botonCarro:disabled {
   background-image: url("../recursos/BotonCarritoDisabled.png");
 }
+
+.filtros__select {
+  font-size: 0.7em;
+  font-family: 'Roboto',sans-serif;
+  padding: 10px;
+  background-color: #FFF6E1;
+}
 /*# sourceMappingURL=styles.css.map */

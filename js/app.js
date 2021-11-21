@@ -7,7 +7,7 @@ const productos = [
         image: "./recursos/JarronOroRosa.png",
         ref: "0301",
         description: "Nuestro Jarrón oro rosa es el complemento ideal para tu decoración en tonos tierras, nudes, rosas, o como quieras combinarlo. Puedes llevarlo con las flores artificiales color rosa o decorarlo con flores naturales a tu elección. Te recomendamos el cuidado de este producto y transportarlo en su empaque.",
-        type: "jarrones"
+        type: "Jarrones"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const productos = [
         image: "./recursos/CandelabroTresNiveles.png",
         ref: "0305",
         description: "Nuestro Jarrón oro rosa es el complemento ideal para tu decoración en tonos tierras, nudes, rosas, o como quieras combinarlo. Puedes llevarlo con las flores artificiales color rosa o decorarlo con flores naturales a tu elección. Te recomendamos el cuidado de este producto y transportarlo en su empaque.",
-        type: "candelabros"
+        type: "Candelabros"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const productos = [
         image: "./recursos/JarronEspejos.png",
         ref: "0302",
         description: "Nuestro Jarrón oro rosa es el complemento ideal para tu decoración en tonos tierras, nudes, rosas, o como quieras combinarlo. Puedes llevarlo con las flores artificiales color rosa o decorarlo con flores naturales a tu elección. Te recomendamos el cuidado de este producto y transportarlo en su empaque.",
-        type: "jarrones"
+        type: "Jarrones"
     },
     {
         id: 4,
@@ -37,17 +37,12 @@ const productos = [
         image: "./recursos/Vintage.png",
         ref: "0309",
         description: "Nuestro Jarrón oro rosa es el complemento ideal para tu decoración en tonos tierras, nudes, rosas, o como quieras combinarlo. Puedes llevarlo con las flores artificiales color rosa o decorarlo con flores naturales a tu elección. Te recomendamos el cuidado de este producto y transportarlo en su empaque.",
-        type: "mesas"
+        type: "Mesas"
     }
     
 ];
 
-const carrito = [
-
-    {
-        id:2
-    }
-];
+const carrito = [];
 
 const seccionDeProductos = document.getElementById("productos");
 
