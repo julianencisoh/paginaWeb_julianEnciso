@@ -154,8 +154,17 @@ padding-left: 15px;
 }
 
 .producto__botonCarro {
-  padding-top: 10px;
+  width: 33px;
+  height: 33px;
+  padding: 0px;
+  margin-top: 10px;
   border: none;
-  background-color: transparent;
+  background-image: url("../recursos/BotonCarrito.png");
+  background-color: white;
+}
+
+
+.producto__botonCarro:disabled {
+  background-image: url("../recursos/BotonCarritoDisabled.png");
 }
 /*# sourceMappingURL=styles.css.map */

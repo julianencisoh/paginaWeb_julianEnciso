@@ -72,7 +72,7 @@ const pintarProducto = (item) => {
                                         
                     </div>
     
-                    <button class="producto__botonCarro"><img src="./recursos/BotonCarrito.png"></button>
+                    <button class="producto__botonCarro"></button>
     
                 </div>
     
@@ -88,8 +88,10 @@ const pintarProducto = (item) => {
             name: item.name,
             image: item.image
         };
-        
+
         carrito.push(productoAgregado);
+        productoBotonCarro.setAttribute("disabled", true);
+        console.log(carrito);
     });
 
 };
