@@ -42,7 +42,12 @@ const productos = [
     
 ];
 
-const carrito = [];
+const carrito = [
+
+    {
+        id:2
+    }
+];
 
 const seccionDeProductos = document.getElementById("productos");
 
@@ -52,6 +57,15 @@ const pintarProducto = (item) => {
 
     producto.setAttribute("href", `./producto.html?id=${item.id}`)
     
+    const estaAgregado = carrito.some(productoBotonCarro => productoBotonCarro.id === item.id);
+    
+    let buttonHTML;
+    if(estaAgregado){
+        buttonHTML  = `<button class="producto__botonCarro" disabled></button>`;
+    } else {
+        buttonHTML = `<button class="producto__botonCarro"></button>`;
+    }
+
     producto.innerHTML = `
     <img src="${item.image}" alt="" class="producto__imagen">
                
@@ -72,7 +86,7 @@ const pintarProducto = (item) => {
                                         
                     </div>
     
-                    <button class="producto__botonCarro"></button>
+                    ${buttonHTML}
     
                 </div>
     
@@ -91,7 +105,6 @@ const pintarProducto = (item) => {
 
         carrito.push(productoAgregado);
         productoBotonCarro.setAttribute("disabled", true);
-        console.log(carrito);
     });
 
 };
