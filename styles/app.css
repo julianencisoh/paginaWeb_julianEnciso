@@ -343,3 +343,95 @@ stroke: 5px;
 .footer__item__title {
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 7%;
+    align-items: center;
+    
+}
+
+.titulo__catalogo {
+    align-items: center;
+    padding: 3% 0% 0% 0%;
+    width: 35%;
+}
+
+.titulo__contenido {
+    font-size: 1.1em;
+    font-family: 'Roboto Slab',sans-serif;
+    text-align: center;
+    padding: 0% 10%;
+}
+
+.contenedorproductos {
+    display: flex;
+    padding: 2% 7% 0% 7%;
+}
+
+.filtros {
+    justify-content: flex-start;
+    width: 20%;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3em;
+}
+
+.filtros__filtrar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.filtros__filtrar__titulo {
+    width: 80%;
+}
+
+.filtros__filtrar__item {
+    text-decoration: none;
+    color: black;
+    padding: 5% 0%;
+}
+
+.filtros__ordenar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.filtros__ordenar__titulo {
+    width: 80%;
+}
+
+.filtros__ordenar__item {
+    text-decoration: none;
+    color: black;
+    padding: 5% 0%;
+}
+
+.Articulos {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.Articulos__titulo {
+    width: 29%;
+    padding: 3% 0% 3% 0%;
+   
+}
