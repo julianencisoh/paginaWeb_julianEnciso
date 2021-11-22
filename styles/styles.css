@@ -225,6 +225,46 @@ width: 50%;
 
 }
 
+.productoss {
+  width: 60%;
+}
 
+
+.productoo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7% 0%;
+  padding: 25px;
+  border: 1px solid;
+}
+
+.productoo__imagen {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.productoo__nombre {
+  font-family: 'Roboto Slab',sans-serif;
+  font-size: 2em;
+}
+
+.productoo__precio {
+font-family: 'Roboto',sans-serif;
+font-size: 1.2em;
+margin-top: 3%;
+}
+
+.productoo__boton {
+  font-size: 1em;
+  font-family: 'Roboto',sans-serif;
+  padding: 10px;
+  background-color: #FFF6E1;
+  cursor: pointer;
+  margin-left: 10px;
+}
 
 /*# sourceMappingURL=styles.css.map */

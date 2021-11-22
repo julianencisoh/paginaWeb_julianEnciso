@@ -1,17 +1,27 @@
 
-const carrito = [];
+//const carrito = [
+//    { id:2,},];
+
+const getMyCart = () => {
+    const carrito = localStorage.getItem("carrito");
+    return carrito ? JSON.parse(carrito) : [];
+};
+
+const carrito = getMyCart();
+
 
 const seccionDeProductos = document.getElementById("productos");
 
 const pintarProducto = (item) => {
+
     const producto = document.createElement("a");
     producto.className = "producto";
 
     producto.setAttribute("href", `./producto.html?id=${item.id}`)
     
     const estaAgregado = carrito.some(productoBotonCarro => productoBotonCarro.id === item.id);
-    
     let buttonHTML;
+
     if(estaAgregado){
         buttonHTML  = `<button class="producto__botonCarro" disabled></button>`;
     } else {
@@ -56,6 +66,9 @@ const pintarProducto = (item) => {
         };
 
         carrito.push(productoAgregado);
+
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+
         productoBotonCarro.setAttribute("disabled", true);
     });
 
@@ -107,3 +120,15 @@ filtrarPorCategorias.addEventListener("change", e => {
     productos.forEach(producto => {
     pintarProducto(producto);
 });
+
+localStorage.setItem("user", "Julian Enciso");
+
+const user = {
+    name: "julian",
+    email: "encisojulian1@gmail.com"
+}
+
+localStorage.setItem("user", JSON.stringify(user));
+
+const userSaved = localStorage.getItem("user");
+console.log(JSON.parse(userSaved).name);
