@@ -62,7 +62,8 @@ const pintarProducto = (item) => {
         const productoAgregado = {
             id: item.id,
             name: item.name,
-            image: item.image
+            image: item.image,
+            price: item.price,
         };
 
         carrito.push(productoAgregado);

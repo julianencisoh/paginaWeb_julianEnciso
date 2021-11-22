@@ -12,6 +12,5 @@ const precioProducto = document.getElementById("precioProducto");
 
 nombreProducto.innerText = producto.name;
 descripcionProducto.innerText = producto.description;
-precioProducto.innerText = `$ ${producto.price}`;
-
+precioProducto.innerText =`$ ${producto.price}`;
 imagenProducto.setAttribute("src", producto.image);

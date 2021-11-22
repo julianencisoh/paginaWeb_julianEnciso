@@ -1,5 +1,9 @@
 
 const cartSection = document.getElementById("carrito");
+const totalSection = document.getElementById("total");
+let total  = 0;
+
+
 const getMyCart = () => {
     const carrito = localStorage.getItem("carrito");
     return carrito ? JSON.parse(carrito) : [];
@@ -9,10 +13,12 @@ const removeProduct = (productoId) => {
     const carrito = getMyCart();
     const newCart = carrito.filter(producto => producto.id !== productoId);
     localStorage.setItem("carrito", JSON.stringify(newCart));
+
+    renderMyCart();
 };
 
 const renderProduct = (producto) => {
-
+    console.log(producto);
     const newProduct = document.createElement("li");
     newProduct.className = "productoo";
     newProduct.innerHTML = `
@@ -39,9 +45,16 @@ const renderProduct = (producto) => {
 
 const  renderMyCart = () => {
     const carrito = getMyCart();
+    cartSection.innerHTML = "";
     carrito.forEach(producto => {
+        console.log(producto);
+        total += producto.price;
         renderProduct(producto);
     });
+
+    totalSection.innerText =` $ ${total}`;
 };
 
 renderMyCart();
+
+console.log(total);
