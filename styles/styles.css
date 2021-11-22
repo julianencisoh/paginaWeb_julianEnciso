@@ -180,4 +180,51 @@ padding-left: 15px;
 .filtros__ordenar__titulo {
   margin-top: 50px;
 }
+
+.productoSolo {
+  width: 80%;
+  margin: 5% auto;
+  display: flex;
+
+}
+
+.productoSolo__imagen {
+width: 50%;
+}
+
+.productoSolo__descripcion {
+ margin: 5% 0 0 5%; 
+}
+
+.productoSolo__nombre {
+  font-family: 'Roboto Slab',sans-serif;
+  font-size: 2em;
+}
+
+.productoSolo__parrafo {
+  font-family: 'Roboto',sans-serif;
+  font-size: 1em;
+  margin-top: 3%;
+}
+
+.productoSolo__precio {
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.5em;
+  margin-top: 3%;
+}
+
+.productoSolo__boton {
+  width: 46px;
+  height: 46px;
+  padding: 0px;
+  margin-top: 15px;
+  border: none;
+  background-image: url("../recursos/BotonCarritoProducto.png");
+  background-color: white;
+  cursor: pointer;
+
+}
+
+
+
 /*# sourceMappingURL=styles.css.map */

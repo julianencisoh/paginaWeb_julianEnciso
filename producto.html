@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="catalogo" href="./catalogo.html">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+</head>
+<body>
+
+    <header>
+    
+        <nav class="navigation">
+            <div class="nav__content">
+                <a href="#"><img class="logo" src="./recursos/logo.png" alt="Logo Eventos Gaby"></a>
+                <ul class="menu">
+                    <li class="menu__item"><a href="./index.html">Inicio</a></li>
+                    <li class="menu__item"><a href="#">Servicios</a></li>
+                    <li class="menu__item"><a href="./catalogo.html">Catálogo</a></li>
+                    <li class="menu__item"><a href="#">Sobre Nosotros</a></li>
+                    <li class="menu__item"><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    
+    </header>
+
+
+    
+    <div class="productoSolo">
+
+        <div class="productoSolo__imagen">
+            <img src="" alt="" class="productoSolo__imagenPrincipal" id="imagenProducto"> 
+        </div>
+        
+        <div class="productoSolo__descripcion">
+
+            <h1 class="productoSolo__nombre" id="nombreProducto">Nombre del producto</h1>
+            <p class="productoSolo__parrafo" id="descripcionProducto"></p>
+            <h3 class="productoSolo__precio" id="precioProducto"></h3>
+
+            <button class="productoSolo__boton"></button>
+
+        </div>
+
+    </div>
+
+
+    <script src="./js/catalogo.js"></script>
+    <script src="./js/producto.js"></script>
+
+</body>
+</html>
