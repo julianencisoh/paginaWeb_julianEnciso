@@ -2,7 +2,7 @@ const productos = [
     {
         id: 1,
         name: "Jarron Oro Rosa",
-        price: "15.000",
+        price: 12000,
         size: "Mediano",
         image: "./recursos/JarronOroRosa.png",
         ref: "0301",
@@ -12,7 +12,7 @@ const productos = [
     {
         id: 2,
         name: "Candelabro 3 Niveles",
-        price: "15.000",
+        price: 10000,
         size: "Mediano",
         image: "./recursos/CandelabroTresNiveles.png",
         ref: "0305",
@@ -22,7 +22,7 @@ const productos = [
     {
         id: 3,
         name: "Jarron Espejos",
-        price: "15.000",
+        price: 15000,
         size: "Mediano",
         image: "./recursos/JarronEspejos.png",
         ref: "0302",
@@ -32,7 +32,7 @@ const productos = [
     {
         id: 4,
         name: "Mesa Vintage",
-        price: "30.000",
+        price: 30000,
         size: "Grande",
         image: "./recursos/Vintage.png",
         ref: "0309",
@@ -105,10 +105,14 @@ const pintarProducto = (item) => {
 };
 
     const filtrarPorCategorias = document.getElementById("categorias");
-    filtrarPorCategorias.addEventListener("change", e => {
-    const categoria = filtrarPorCategorias.value;
+    const ordenarPorElegido = document.getElementById("ordenarPor");
 
-    seccionDeProductos.innerHTML = "";
+const cargarProductos = () => {
+
+    const categoria = filtrarPorCategorias.value || "";
+    const orden = ordenarPorElegido.value || "";
+
+    seccionDeProductos.innerHTML = ""; 
 
     let productosYaFiltrados;
 
@@ -118,12 +122,30 @@ const pintarProducto = (item) => {
         productosYaFiltrados = productos;
     }
 
+    if(orden === "asc") {
+        productosYaFiltrados = productosYaFiltrados.sort((a, b)=> a.price - b.price);
+    }
+
+    if(orden === "desc") {
+        productosYaFiltrados = productosYaFiltrados.sort((a,b) => b.price - a.price);
+    }
+
+
 
     productosYaFiltrados.forEach(producto => {
     pintarProducto(producto);
     });
+};
 
+
+ordenarPorElegido.addEventListener("change", e => {
+    cargarProductos();
 }); 
+
+filtrarPorCategorias.addEventListener("change", e => {
+    cargarProductos();    
+}); 
+
 
     productos.forEach(producto => {
     pintarProducto(producto);

@@ -170,9 +170,14 @@ padding-left: 15px;
 }
 
 .filtros__select {
+  width: 80%;
   font-size: 0.7em;
   font-family: 'Roboto',sans-serif;
   padding: 10px;
   background-color: #FFF6E1;
+}
+
+.filtros__ordenar__titulo {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
