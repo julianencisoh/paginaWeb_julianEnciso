@@ -1,7 +1,6 @@
 
 const cartSection = document.getElementById("carrito");
 const totalSection = document.getElementById("total");
-let total  = 0;
 
 
 const getMyCart = () => {
@@ -26,7 +25,7 @@ const renderProduct = (producto) => {
 
         <div class="productoo__info">
             <h2 class="productoo__nombre">${producto.name}</h2>
-            <h3 class="productoo__precio">$ ${producto.price}</h3>
+            <h3 class="productoo__precio">${formatCurrency(producto.price) }</h3>
         </div>
         <button class="productoo__boton">Remover</button>
     `;
@@ -45,14 +44,16 @@ const renderProduct = (producto) => {
 
 const  renderMyCart = () => {
     const carrito = getMyCart();
+    let total  = 0;
     cartSection.innerHTML = "";
+    
     carrito.forEach(producto => {
         console.log(producto);
         total += producto.price;
         renderProduct(producto);
     });
 
-    totalSection.innerText =` $ ${total}`;
+    totalSection.innerText =`Total: ${formatCurrency(total)}`;
 };
 
 renderMyCart();
