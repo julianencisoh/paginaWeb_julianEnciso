@@ -38,7 +38,7 @@ const pintarProducto = (item) => {
                     <div class="producto__precioytam">
                         <div class="producto__precio">
                             <h2 class="producto__tituloitem">Precio Individual</h2>
-                            <h3 class="producto__valor">${ formatCurrency(item.price) }</h3>
+                            <h3 class="producto__valor">${ formatCurrency(producto.price) }</h3>
                         </div>
     
                         <div class="producto__tamanio">

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
-
+    <title>Ingreso</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +19,7 @@
     <link rel="stylesheet" href="./styles/mobile.css">
 </head>
 <body>
-
+    
     <header>
     
         <nav class="navigation">
@@ -30,7 +29,7 @@
                     <li class="menu__item"><a href="./index.html">Inicio</a></li>
                     <li class="menu__item"><a href="./catalogo.html">Catálogo</a></li>
                     <li class="menu__item"><a href="./carrito.html">Carrito</a></li>
-                    <li class="menu__item"><a href="./login.html">Ingresar</a></li>
+                    <li class="menu__item"><a href="#">Ingresar</a></li>
                 </ul>
             </div>
             
@@ -39,28 +38,34 @@
     </header>
 
 
-    
-    <div class="productoSolo">
+    <div class="login__primerDiv">
+        <img class="login__titulo" src="./recursos/tituloRegistro.svg" alt="">
 
-        <div class="productoSolo__imagen">
-            <img src="" alt="" class="productoSolo__imagenPrincipal" id="imagenProducto"> 
+        <div class="login__contenedor" >
+            <form action="" id="register" class="login__datos">
+            <input class="login__item" type="text" placeholder="Nombre" name="name">
+            <input class="login__item" type="text" placeholder="Correo" name="email">
+            <input class="login__item" type="text" placeholder="Contraseña" name="password">
+            <input class="login__item" type="text" placeholder="Ciudad" name="city">
+            <input class="login__item" type="text" placeholder="Direccion" name="address">
+            <button type="submit" class="login__item__boton">Registrarme</button>
+
+            </form>
         </div>
-        
-        <div class="productoSolo__descripcion">
-
-            <h1 class="productoSolo__nombre" id="nombreProducto">Nombre del producto</h1>
-            <p class="productoSolo__parrafo" id="descripcionProducto"></p>
-            <h3 class="productoSolo__precio" id="precioProducto"></h3>
-
-            <button class="productoSolo__boton"></button>
-
-        </div>
-
     </div>
 
-    <script src="./js/utils.js"></script>
-    <script src="./js/catalogo.js"></script>
-    <script src="./js/producto.js"></script>
 
+    <div class="login__segundoDiv">
+        <img class="login__titulo" src="./recursos/tituloIniciar.svg" alt="">
+
+        <div class="login__contenedorDos" >
+            <form action="" class="login__datos" id="login">
+            <input class="login__item" type="text" placeholder="Correo" name="email">
+            <input class="login__item" type="text" placeholder="Contraseña" name="password">
+            <button class="login__item__boton">Iniciar Sesión</button>
+        </div>
+    </div>
+
+    <script type="module" src="./js/auth.js"></script>
 </body>
 </html>
