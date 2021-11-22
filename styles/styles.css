@@ -335,10 +335,13 @@ justify-content: space-around;
 }
 
 .login__contenedorDos {
-  width: 35%;
-align-items: center;
-justify-content: space-around;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+
+
 
 
 
