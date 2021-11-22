@@ -267,4 +267,13 @@ margin-top: 3%;
   margin-left: 10px;
 }
 
+.total {
+  display: flex;
+  width: 100%;
+  margin: 4% 3%;
+  padding: 25px;
+  border: 1px solid;
+  font-family: 'Roboto',sans-serif;
+}
+
 /*# sourceMappingURL=styles.css.map */
