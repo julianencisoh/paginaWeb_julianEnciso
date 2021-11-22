@@ -14,3 +14,4 @@ nombreProducto.innerText = producto.name;
 descripcionProducto.innerText = producto.description;
 precioProducto.innerText =`${ formatCurrency(producto.price) }`;
 imagenProducto.setAttribute("src", producto.image);
+

@@ -64,7 +64,7 @@ const productos = [
         name: "Candelabro Farol",
         price: 10000,
         size: "Pequeño",
-        image: "./recursos/Vintage.png",
+        image: "./recursos/CandelabroFarol.png",
         ref: "0306",
         description: "Nuestro Jarrón oro rosa es el complemento ideal para tu decoración en tonos tierras, nudes, rosas, o como quieras combinarlo. Puedes llevarlo con las flores artificiales color rosa o decorarlo con flores naturales a tu elección. Te recomendamos el cuidado de este producto y transportarlo en su empaque.",
         type: "Candelabros"
@@ -98,7 +98,7 @@ const productos = [
         ref: "0310",
         description: "Nuestro Jarrón oro rosa es el complemento ideal para tu decoración en tonos tierras, nudes, rosas, o como quieras combinarlo. Puedes llevarlo con las flores artificiales color rosa o decorarlo con flores naturales a tu elección. Te recomendamos el cuidado de este producto y transportarlo en su empaque.",
         type: "Mesas"
-    }
+    },
 
     
 ];
