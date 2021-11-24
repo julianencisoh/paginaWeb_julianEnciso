@@ -385,7 +385,7 @@ stroke: 5px;
 
 .filtros {
     justify-content: flex-start;
-    width: 40%;
+    width: 300px;
     font-family: 'Roboto',sans-serif;
     font-size: 1.3em;
 }
