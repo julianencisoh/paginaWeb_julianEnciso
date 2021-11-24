@@ -1,13 +1,14 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
-import { getFirestore, collection, getDocs} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+import { getAuth, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
+import { getFirestore, collection, getDocs, doc, getDoc, setDoc} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
 
 const app = initializeApp(firebaseConfig);
-//const auth = getAuth();
+const auth = getAuth();
 const db = getFirestore(app);
 
 let productos = [];
 let userLogged = null;
-let cart = [];
+let carrito = [];
 
 const getAllProducts = async() => {
     const collectionRef = collection(db, "productos");
@@ -32,15 +33,25 @@ const getAllProducts = async() => {
 
 
 
-
-
-
 const getMyCart = () => {
     const carrito = localStorage.getItem("carrito");
     return carrito ? JSON.parse(carrito) : [];
 };
 
-const carrito = getMyCart();
+const getFirebaseCart = async (userId) => {
+    const docRef = doc(db, "carrito", userId);
+    const docSnap = await getDoc(docRef);
+    const data = docSnap.data();
+    return data;
+};
+
+const addProductsToCart = async (productos) => {
+    await setDoc(doc(db, "carrito", userLogged.uid), {
+        productos
+    });
+
+};
+
 
 
 const seccionDeProductos = document.getElementById("productos");
@@ -91,6 +102,7 @@ const pintarProducto = (item) => {
     const productoBotonCarro = producto.querySelector(".producto__botonCarro");
 
     productoBotonCarro.addEventListener("click", e => {
+
         e.preventDefault();
         const productoAgregado = {
             id: item.id,
@@ -100,6 +112,10 @@ const pintarProducto = (item) => {
         };
 
         carrito.push(productoAgregado);
+
+        if(userLogged) {
+            addProductsToCart(carrito);
+        }
 
         localStorage.setItem("carrito", JSON.stringify(carrito));
 
@@ -111,7 +127,7 @@ const pintarProducto = (item) => {
     const filtrarPorCategorias = document.getElementById("categorias");
     const ordenarPorElegido = document.getElementById("ordenarPor");
 
-const cargarProductos = () => {
+    const cargarProductos = () => {
 
     const categoria = filtrarPorCategorias.value || "";
     const orden = ordenarPorElegido.value || "";
@@ -166,4 +182,15 @@ const user = {
 localStorage.setItem("user", JSON.stringify(user));
 
 
-getAllProducts();
+onAuthStateChanged(auth, async (user) => {
+    if(user) {
+        const result = await getFirebaseCart(user.uid);
+        carrito = result.productos;
+        userLogged = user;
+    } else {
+        carrito = getMyCart();
+    }
+
+    getAllProducts();
+
+});

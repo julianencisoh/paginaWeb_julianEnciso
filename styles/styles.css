@@ -525,4 +525,25 @@
 #logout.visible {
   display: block;
 }
+
+#createProduct {
+  font-size: 1em;
+  font-family: 'Roboto',sans-serif;
+  width: 80%;
+  margin: 20px auto;
+}
+
+#createProduct input, #createProduct textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  font-family: 'Roboto',sans-serif;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+
+#createProduct input {
+  background-color: #fdf3e6;
+  border: black;
+}
 /*# sourceMappingURL=styles.css.map */

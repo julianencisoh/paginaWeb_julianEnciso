@@ -435,12 +435,35 @@
 
     #logout {
       display: none;
-      
+
       &.visible {
         display: block;
       }
     }
     
+    #createProduct {
+      font-size: 1em;
+      font-family: 'Roboto',sans-serif;
+      width: 80%;
+      margin: 20px auto;
+     
+
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        font-family: 'Roboto',sans-serif;
+        margin-bottom: 10px;
+        margin-top: 3px;
+      }
+
+      input {
+        background-color: rgb(253, 243, 230);
+        border: black;
+      }
+
+
+    }
     
 
 

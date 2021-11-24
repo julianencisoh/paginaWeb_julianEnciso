@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="catalogo" href="./catalogo.html">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+
+</head>
+<body>
+
+    <header>
+    
+        <nav class="navigation">
+            <div class="nav__content">
+                <a href="#"><img class="logo" src="./recursos/logo.png" alt="Logo Eventos Gaby"></a>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#">Inicio</a></li>
+                    <li class="menu__item"><a href="./catalogo.html">Catálogo</a></li>
+                    <li class="menu__item"><a href="./carrito.html">Carrito</a></li>
+                    <li class="menu__item"><a href="./login.html">Ingresar</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    
+    </header>
+
+
+
+    <form id="createProduct">
+        <h1>Añade un nuevo producto</h1>
+        <input type="text" name="name" placeholder="Nombre del producto">
+        <input type="number" name="price" placeholder="Precio del producto">
+
+        <textarea name="description" placeholder="Descripción del producto"></textarea>
+
+        <div class="images">
+            <div class="images__input">
+                <label for="name">Fotografía principal</label>
+                <input type="file" accept=".jpg,.png" name="image" id="mainImage">
+            </div>
+            <img src="" alt="" id="preview">
+        </div>
+
+        <label for="type">Categoría del producto</label>
+        <select name="type">
+            <option value="Jarrones">Jarrones</option>
+            <option value="Candelabros">Candelabros</option>
+            <option value="Mesas">Mesas</option>
+        </select>
+
+        <div class="images">
+            <label for="gallery">Galería</label>
+            <input type="file" accept=".jpg,.png" multiple name="gallery">
+        </div>
+
+        <input class="create__button" type="submit" value="Agregar producto" id="submitButton">
+        <p id="feedback"></p>
+    </form>
+
+
+
+    <div class="footer">
+
+        <div class="footer__left">
+            <img class="footer__left__logo" src="./recursos/logo.png" alt="Logo Eventos Gaby"> 
+        </div>
+        
+        <div class="footer__right">
+    
+            <div class="footer__item">
+                <p class="footer__item__title">Síguenos</p>
+                <p class="footer__item__subtitle">Facebook</p>
+                <p class="footer__item__subtitle">Instagram</p>
+            </div>
+    
+            <div class="footer__item">
+                <p class="footer__item__title">Legal</p>
+                <p class="footer__item__subtitle">Términos y Condiciones</p>
+                <p class="footer__item__subtitle">Nuestras Políticas</p>
+                <p class="footer__item__subtitle">Métodos de Pago</p>
+            </div>
+    
+            <div class="footer__item">
+                <p class="footer__item__title">Eventos Gaby</p>
+                <p class="footer__item__subtitle">Inicio</p>
+                <p class="footer__item__subtitle">Servicio</p>
+                <p class="footer__item__subtitle">Sobre Nosotros</p>
+                <p class="footer__item__subtitle">Contáctanos</p>
+            </div>
+    
+        </div>
+        
+    </div>
+
+
+
+    <script src="./js/utils.js"></script>
+    <script type="module" src="./js/create-product.js"></script>
+</body>
+</html>
