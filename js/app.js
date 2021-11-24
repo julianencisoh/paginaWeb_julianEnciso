@@ -41,8 +41,9 @@ const getMyCart = () => {
 const getFirebaseCart = async (userId) => {
     const docRef = doc(db, "carrito", userId);
     const docSnap = await getDoc(docRef);
-    const data = docSnap.data();
-    return data;
+    return docSnap.exists() ? docSnap.data() : {
+        productos: []
+    }
 };
 
 const addProductsToCart = async (productos) => {
