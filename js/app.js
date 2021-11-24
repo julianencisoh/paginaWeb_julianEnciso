@@ -1,6 +1,39 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+import { getFirestore, collection, getDocs} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
 
-//const carrito = [
-//    { id:2,},];
+const app = initializeApp(firebaseConfig);
+//const auth = getAuth();
+const db = getFirestore(app);
+
+let productos = [];
+let userLogged = null;
+let cart = [];
+
+const getAllProducts = async() => {
+    const collectionRef = collection(db, "productos");
+    const { docs } = await getDocs(collectionRef);
+
+    const firebaseProducts = docs.map((doc) => {
+        return {
+            ...doc.data(),
+            id: doc.id,
+        }
+    })
+
+    console.log(firebaseProducts);
+    
+    firebaseProducts.forEach(producto => {
+    pintarProducto(producto);
+    });
+
+    productos = firebaseProducts;
+
+};
+
+
+
+
+
 
 const getMyCart = () => {
     const carrito = localStorage.getItem("carrito");
@@ -86,10 +119,12 @@ const cargarProductos = () => {
     seccionDeProductos.innerHTML = ""; 
 
     let productosYaFiltrados;
-
+    
     if (categoria !== ""){
-    productosYaFiltrados = productos.filter((producto) => producto.type === categoria);     
+    productosYaFiltrados = productos.filter((producto) => producto.type === categoria); 
+ 
     } else {
+
         productosYaFiltrados = productos;
     }
 
@@ -101,11 +136,10 @@ const cargarProductos = () => {
         productosYaFiltrados = productosYaFiltrados.sort((a,b) => b.price - a.price);
     }
 
-
-
-    productosYaFiltrados.forEach(producto => {
-    pintarProducto(producto);
+    productosYaFiltrados.forEach(producto =>{
+        pintarProducto(producto);
     });
+   
 };
 
 
@@ -131,5 +165,5 @@ const user = {
 
 localStorage.setItem("user", JSON.stringify(user));
 
-const userSaved = localStorage.getItem("user");
-console.log(JSON.parse(userSaved).name);
+
+getAllProducts();

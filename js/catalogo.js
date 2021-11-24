@@ -1,3 +1,10 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+import { getFirestore, doc, setDoc} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+/*
 const productos = [
     {
         id: 1,
@@ -102,3 +109,9 @@ const productos = [
 
     
 ];
+
+*/
+
+productos.forEach(async (producto) => {
+    await setDoc(doc(db, "productos", `CVS8SDV998VZFESE${producto.id}`), producto);
+});

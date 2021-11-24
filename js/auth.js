@@ -5,15 +5,6 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
 import { getFirestore, doc, setDoc, getDoc} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyCRwFnHXfu-gj5KWKeBhM8rjk4e5SW12lQ",
-    authDomain: "carrito-6a685.firebaseapp.com",
-    projectId: "carrito-6a685",
-    storageBucket: "carrito-6a685.appspot.com",
-    messagingSenderId: "11133931309",
-    appId: "1:11133931309:web:5727d878d22c83d3140da4",
-};
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -40,10 +31,24 @@ const createUser = async (email, password, userFields) => {
     }    
 }
 
+const getUserInfo = async (userId) => {
+    try {
+        const docRef = doc(db, "users", userId);
+        const docSnap = await getDoc(docRef);
+        return docSnap.data();
+    } catch (e) {
+        console.log(e);
+    }
+
+}
+
 const login = async (email, password) => {
     try {
         const { user } = await signInWithEmailAndPassword(auth, email, password);
-        console.log(`Bienvenido ${user.email}`);
+        const userInfo = await getUserInfo(user.uid);
+        console.log(`Bienvenidx ${userInfo.name}`);
+
+        console.log(userInfo);     
     } catch (e){
         if(e.code === "auth/user-not-found"){
             console.log("Este usuario no existe en la base de datos");
