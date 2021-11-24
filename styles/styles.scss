@@ -432,13 +432,16 @@
     }  
     
     #logout {
-      display: none;
+      display: flex;
 
       &.visible {
         display: block;
+        width: 100%;
+        padding: 12px;
       }
     }
     
+
     #createProduct {
       font-size: 1em;
       font-family: 'Roboto',sans-serif;

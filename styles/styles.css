@@ -519,11 +519,15 @@
 }
 
 #logout {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #logout.visible {
   display: block;
+  width: 100%;
+  padding: 12px;
 }
 
 #createProduct {

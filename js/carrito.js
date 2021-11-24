@@ -132,7 +132,7 @@ checkoutForm.addEventListener("submit", e => {
         city,
         address
     };
-
+    console.log(userFields)
     if(carrito.length ) {
         if (name && city && address) {
         createOrder(userFields);
@@ -154,7 +154,7 @@ onAuthStateChanged(auth, async (user) => {
         const userInfo = await getUserInfo(user.uid);
         userLogged = {
             ...user,
-            ...userinfo
+            ...userInfo
         };
 
     } else {
