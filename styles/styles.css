@@ -370,7 +370,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 169%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -545,5 +545,33 @@
 #createProduct input {
   background-color: #fdf3e6;
   border: black;
+}
+
+.checkout__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkout__section section {
+  width: 50%;
+  padding-top: 5%;
+  margin-right: 20px;
+}
+
+.checkout__section form input, .checkout__section form select {
+  width: 100%;
+  border: none;
+  background-color: #f7dab5;
+  font-size: 1em;
+  font-family: 'Roboto',sans-serif;
+  padding: 8px;
+  margin: 5px auto;
 }
 /*# sourceMappingURL=styles.css.map */

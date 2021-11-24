@@ -318,7 +318,7 @@
     
     .productoo {
       display: flex;
-      width: 100%;
+      width: 169%;
       align-items: center;
       justify-content: space-between;
       margin: 7% 0%;
@@ -431,8 +431,6 @@
     
     }  
     
-       
-
     #logout {
       display: none;
 
@@ -465,6 +463,35 @@
 
     }
     
+.checkout__section{
+display: flex;
+align-items: flex-start;
+justify-content: center;
+
+  section {
+    width: 50%;
+    padding-top: 5%;
+    margin-right: 20px;
+  }
+
+  form {
+    input, select {
+      width: 100%;
+      border: none;
+      background-color: rgb(247, 218, 181);
+      font-size: 1em;
+      font-family: 'Roboto',sans-serif;
+      padding: 8px;
+      margin: 5px auto;
+
+
+    }
+  }
+
+  
+          
+}
+
 
 
 

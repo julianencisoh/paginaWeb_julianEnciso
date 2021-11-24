@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="./styles/mobile.css">
 </head>
 <body>
-
     
 <header>
     
@@ -36,16 +35,67 @@
         
     </nav>
 
-    </header>
+</header>
     
+    <div class="checkout__section">
 
-    <h3 class="total" id="total"></h3>
-    <ul class="productoss" id="carrito"></ul>
+        <section>
+            <h3 class="total" id="total"></h3>
+            <ul class="productoss" id="carrito"></ul>
+        </section>
+        
+        <section>
+            <button id="autofill">Usar mismos datos del usuario</button>
+            <form id="checkout" class="form">
+                <input type="text" name="name" placeholder="Nombre completo">
+                <input type="text" name="city" placeholder="Cuidad">
+                <input type="text" name="address" placeholder="Dirección de residencia">
+                <select name="payment">
+                    <option value="contraentrega">Pago contra entrega</option>
+                    <option value="pse">PSE</option>
+                </select>
+                <input type="submit" value="Completar compra">
+            </form>
+        </section>
+    </div>
 
 
+
+    <div class="footer">
+
+        <div class="footer__left">
+            <img class="footer__left__logo" src="./recursos/logo.png" alt="Logo Eventos Gaby"> 
+        </div>
+        
+        <div class="footer__right">
+    
+            <div class="footer__item">
+                <p class="footer__item__title">Síguenos</p>
+                <p class="footer__item__subtitle">Facebook</p>
+                <p class="footer__item__subtitle">Instagram</p>
+            </div>
+    
+            <div class="footer__item">
+                <p class="footer__item__title">Legal</p>
+                <p class="footer__item__subtitle">Términos y Condiciones</p>
+                <p class="footer__item__subtitle">Nuestras Políticas</p>
+                <p class="footer__item__subtitle">Métodos de Pago</p>
+            </div>
+    
+            <div class="footer__item">
+                <p class="footer__item__title">Eventos Gaby</p>
+                <p class="footer__item__subtitle">Inicio</p>
+                <p class="footer__item__subtitle">Servicio</p>
+                <p class="footer__item__subtitle">Sobre Nosotros</p>
+                <p class="footer__item__subtitle">Contáctanos</p>
+            </div>
+    
+        </div>
+        
+    </div>
 
     <script src="./js/utils.js"></script>
-    <script src="./js/carrito.js"></script>
+    <script type="module" src="./js/carrito.js"></script>
 
 </body>
 </html>   
