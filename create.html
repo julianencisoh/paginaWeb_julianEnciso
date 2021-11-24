@@ -45,6 +45,7 @@
         <h1>Añade un nuevo producto</h1>
         <input type="text" name="name" placeholder="Nombre del producto">
         <input type="number" name="price" placeholder="Precio del producto">
+        <input type="number" name="ref" placeholder="Referencia del producto">
 
         <textarea name="description" placeholder="Descripción del producto"></textarea>
 
@@ -63,10 +64,12 @@
             <option value="Mesas">Mesas</option>
         </select>
 
-        <div class="images">
-            <label for="gallery">Galería</label>
-            <input type="file" accept=".jpg,.png" multiple name="gallery">
-        </div>
+        <label for="size">Tamaño del producto</label>
+        <select name="size">
+            <option value="Grande">Grande</option>
+            <option value="Mediano">Mediano</option>
+            <option value="Pequeño">Pequeño</option>
+        </select>
 
         <input class="create__button" type="submit" value="Agregar producto" id="submitButton">
         <p id="feedback"></p>
